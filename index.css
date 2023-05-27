@@ -9,13 +9,13 @@
 .navlink {
   position: fixed;
   top: 0;
-
+  padding: 0;
   width: 100%;
   list-style-type: none;
   margin: 0px;
-  padding: 0px;
   overflow: hidden;
   background-color: antiquewhite;
+  z-index: 100;
 }
 
 .navlink li {
@@ -48,6 +48,7 @@
   float: right;
 }
 
+
 .form {
   display: flex;
   flex-direction: row;
@@ -77,6 +78,9 @@
   padding: 10px 35px 10px 15px;
   border-radius: 0px 30px 30px 0px;
   border: none;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   outline: none;
 
 }
@@ -86,7 +90,13 @@
   height: 40px;
 }
 
-.monsters {}
+.monsters {
+  height: 88vh;
+  width: 100%;
+  background-color: brown;
+  position: absolute;
+  /* top: 98px; */
+}
 
 .monster {
   width: 250px;
@@ -114,5 +124,15 @@
 }
 
 .email {
-  margin-top:0;
+  margin-top: 0;
+}
+
+.scrolled {
+  top: 98px;
+}
+
+#monsters {
+  /* margin-top: 98px; */
+  position: relative;
+  z-index: 1;
 }
