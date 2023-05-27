@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navlink {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: antiquewhite;
+}
+
+.navlink li {
+  display: inline;
+  float: left;
+}
+
+.navlink li a {
+  display: block;
+  padding: 14px 85px;
+  background-color: antiquewhite;
+  color: rgb(110, 94, 94);
+  text-align: center;
+  text-decoration: none;
+  font-family: kalam;
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+/* .navlink li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.navlink .active {
+    background-color: #04AA6D;
+} */
+
+
+.navlink .right {
+  float: right;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.search {
+  margin-right: 260px;
+  margin-top: 24px;
+}
+
+.search-field {
+
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  outline: none;
+  align-content: center;
+
+}
+
+.search-button {
+  width: 50%;
+  height: 50px;
+  padding: 10px 35px 10px 15px;
+  border-radius: 0px 30px 30px 0px;
+  border: none;
+  outline: none;
+
+}
+
+.search-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.monsters {}
+
+.monster {
+  width: 250px;
+  height: 335px;
+  background-color: aquamarine;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+}
+
+.monster img {
+  width: 250px;
+  height: 250px;
+}
+
+.name {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: kalam;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+.email {
+  margin-top:0;
+}
