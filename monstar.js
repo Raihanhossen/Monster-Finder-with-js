@@ -1,4 +1,4 @@
-const monstrs = [
+export const monsters = [
     {
         id:1,
         name:'Saiful Islam',

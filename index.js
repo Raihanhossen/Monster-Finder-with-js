@@ -1,21 +1,17 @@
-/* <div class="monster">
-            <img src="https://robohash.org/6?set=set2" alt="">
-            <p class="name">Shahnewaz Saadi</p>
-            <p class="email">shahnewazsaadi@gmail.com</p>
-        </div>
-        <div class="p-5 not-found" style="display: none;">
-            <span>404</span>
-            <h1>No monster found</h1>
-        </div> */
+import {monsters} from './monstar.js';
+console.log(monsters);
 
-const monsters = document.getElementById('monsters');
-showMonsters();
-function showMonsters() {
+for(let monsterDiv of monsters ){
+    showMonsters(monsterDiv);
+}
+// const monsters = document.getElementById('monsters');
+// showMonsters(monsterDiv);
+function showMonsters(monsterDiv) {
     const monster = document.createElement('div');
     monster.className = 'monster';
 
     const img = document.createElement('img');
-    img.src = 'https://robohash.org/6?set=set2';
+    img.src = `https://robohash.org/${monsterDiv.id}?set=set2`;
     img.alt = 'Shahnewaz Saadi';
 
     const mname = document.createElement('p');
@@ -46,4 +42,5 @@ function notFound() {
     h1.innerText = 'No Monster Found';
 
     notFoundDiv.append(span, h1);
+    document.querySelector('.monsters').append(notFoundDiv);
 }
