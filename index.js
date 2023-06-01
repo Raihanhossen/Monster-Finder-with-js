@@ -8,7 +8,7 @@ for(let monsterDiv of monsters ){
 // showMonsters(monsterDiv);
 function showMonsters(monsterDiv) {
     const monster = document.createElement('div');
-    monster.className = 'monster';
+    monster.className = 'monster item2';
 
     const img = document.createElement('img');
     img.src = `https://robohash.org/${monsterDiv.id}?set=set2`;
@@ -21,7 +21,7 @@ function showMonsters(monsterDiv) {
 
     const email = document.createElement('p');
     email.className = 'email';
-    email.innerText = 'shahnewzsaddi@gmail.com';
+    email.innerText = 'shahnewzsaadi@gmail.com';
 
     monster.append(img, mname, email);
 

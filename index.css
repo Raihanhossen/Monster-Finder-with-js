@@ -90,32 +90,39 @@
   height: 40px;
 }
 
-.monsters {
+.container2{
   display: flex;
-  flex-direction: row-reverse;
-  height: 88vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.monsters {
+  /* height: 88vh; */
   width: 100%;
   background-color: brown;
-  position: absolute;
-  /* top: 98px; */
+  position: relative;
+  top: 98px;
+  
+}
+
+.item2 {
+  flex: 1 1 25% 25%;
+  margin: 20px;
 }
 
 .monster {
-  width: 250px;
-  height: 335px;
   background-color: aquamarine;
   position: relative;
-  margin-right: 30px;
+  /* margin: 30px; */
   border-radius: 5px;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
   text-align: center;
+ 
 }
 
 .monster img {
-  width: 250px;
-  height: 250px;
+  /* width: 250px; */
+  /* height: 250px; */
+  
 }
 
 .name {
@@ -125,10 +132,12 @@
   font-size: 30px;
   margin-bottom: 0;
   margin-top: 4px;
+  text-align: center;
 }
 
 .email {
   margin-top: 0;
+  text-align: center;
 }
 
 .scrolled {
@@ -136,7 +145,7 @@
 }
 
 #monsters {
-  /* margin-top: 98px; */
+  margin-top: -41px;
   position: relative;
   z-index: 1;
 }
