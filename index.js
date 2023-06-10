@@ -12,16 +12,16 @@ function showMonsters(monsterDiv) {
 
     const img = document.createElement('img');
     img.src = `https://robohash.org/${monsterDiv.id}?set=set2`;
-    img.alt = 'Shahnewaz Saadi';
+    img.alt = monsterDiv.name;
 
     const mname = document.createElement('p');
     mname.className = 'name';
-    mname.innerText = 'Shahnewaz Saadi';
+    mname.innerText = monsterDiv.name;
 
 
     const email = document.createElement('p');
     email.className = 'email';
-    email.innerText = 'shahnewzsaadi@gmail.com';
+    email.innerText = monsterDiv.email;
 
     monster.append(img, mname, email);
 
@@ -44,3 +44,9 @@ function notFound() {
     notFoundDiv.append(span, h1);
     document.querySelector('.monsters').append(notFoundDiv);
 }
+
+document.querySelector('#search-monster').addEventListener('keyup', function(e){
+    const keyword = e.target.value.toLowerCase();
+    console.log(e);
+    console.log(keyword);
+});
