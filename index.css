@@ -99,7 +99,7 @@
 .monsters {
   /* height: 88vh; */
   width: 100%;
-  background-color: brown;
+  background-color: rgb(165, 138, 125);
   position: relative;
   top: 98px;
   
@@ -160,3 +160,7 @@
   transform: translate(50%, -50%);
   text-align: center;
 } */
+
+.newClass {
+  background-color: beige;
+}

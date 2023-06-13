@@ -49,4 +49,24 @@ document.querySelector('#search-monster').addEventListener('keyup', function(e){
     const keyword = e.target.value.toLowerCase();
     console.log(e);
     console.log(keyword);
+
+    const findMonster = document.querySelectorAll('.monster');
+
+    //searching function for email and name according to match
+    for (let monster of findMonster) {
+        console.log(monster.children);
+
+        const name = monster.children[1].innerText.toLowerCase();
+        const email = monster.children[2].innerText.toLowerCase();
+
+        console.log(name,email);
+
+        if(name.includes(keyword)||email.includes(keyword)){
+            monster.style.display = "block";
+        }
+        else{
+            monster.style.display = 'none';
+        }
+    }
+
 });
